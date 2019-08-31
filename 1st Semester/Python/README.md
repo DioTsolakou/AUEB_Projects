@@ -1,1 +1,1 @@
-Python Project done for the Introduction to Computer Science.
+Python Project done for the Introduction to Computer Science course.
