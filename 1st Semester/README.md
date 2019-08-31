@@ -1,1 +1,1 @@
-Only Java 1 projects. Forgot to make a subfolder named Java 1.
+All projects done during the 1st semester.
