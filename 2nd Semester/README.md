@@ -1,1 +1,1 @@
-Only Java projects.
+Projects done during the second semester.
