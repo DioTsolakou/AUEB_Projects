@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" type="text/css" href="sheet.css" /> 
+		<title> Contact </title>
+		<style>
+			#contact{
+			margin-top:10px;
+			border:3px solid grey;
+			background-color:rgb(255,255,255);
+			}
+			#contact th{
+			font-size:150%;
+			}
+			#contact td{
+			padding:5px;
+			font-size:150%;
+			}
+			#form{
+			margin-left:20px;
+			}
+			#comment_h{
+			font-size:200%;
+			}
+			#choices{
+			font-size:130%;
+			}
+			#radio1{
+			margin-left:60px;
+			}
+			#radio2{
+			margin-left:165px;
+			}
+			#radio3{
+			margin-left:145px;
+			}
+			#radio4{
+			margin-left:170px;
+			}
+			#submit{
+			font-size:110%;
+			}
+		</style>
+	</head>
+		
+	<body>
+	<br>
+	<br>
+	<br>
+	<table id="menu" align="center">
+		<tr>
+			<td> <a href="home.html"> Αρχική </a> </td>
+			<td> <a href="general.html"> Γενικά </a> </td>
+			<td> <a href="recipes.html"> Συνταγές </a> </td>
+			<td> <a href="contact.html"> Επικοινωνία </a> </td>
+		</tr>
+	</table>
+	<br/>
+	<br/>
+	<table id="contact" align="center" >
+		<tr>
+			<th> Ονοματεπώνυμο <th/>
+			<th> Αριθμός Μητρώου <th/>
+			<th> E-mail <th/>
+		</tr>
+		<tr>
+			<td> Δημοσθένης Γιαννακόπουλος </td>
+			<td colspan="3" align="center"> 3170027 </td>
+			<td align="center"> p3170027@dias.aueb.gr </td>
+		</tr>
+		<tr>
+			<td> Κωνσταντίνα Σαρινοπούλου </td>
+			<td colspan="3" align="center"> 3170142 </td>
+			<td align="center"> p3170142@dias.aueb.gr <td>
+		</tr>
+		<tr>
+			<td> Διογένης Τσολάκου </td>
+			<td colspan="3" align="center"> 3170164 </td>
+			<td align="center"> p3170164@dias.aueb.gr </td>
+		</tr>
+	</table>
+	<br/>
+	<br/>
+	<br/>
+	<form id="form">
+		<pre id="comment_h">Αφήστε ένα σχόλιο</pre>
+		Όνομα
+		<input type="text" name="Name">
+		<br/>
+		<br/>
+		E-mail
+		<input type="text" name="Mail">
+		<br/>
+		<br/>
+		<textarea name="comments" rows=10 cols=100>
+		</textarea>
+		<br/>
+		<br/>
+		<pre id="choices">
+Πολύ ενδιαφέρουσα	 Καλή	       Αρκετά καλή	 Χρειάζεται βελτίωση </pre>
+		<input type="radio" name="choice" value="choice1" id="radio1">
+		<input type="radio" name="choice" value="choice2" id="radio2">
+		<input type="radio" name="choice" value="choice3" id="radio3">
+		<input type="radio" name="choice" value="choice4" id="radio4">
+		<br/>
+		<br/>
+		<br/>
+		<input type="submit" value="Υποβολή" id="submit">
+	</form>
+	</body>
+</html>
+	
