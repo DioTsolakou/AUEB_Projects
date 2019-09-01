@@ -1,1 +1,1 @@
-Simple GDE
+Simple Greatest Common Divisor (GCD) program.
