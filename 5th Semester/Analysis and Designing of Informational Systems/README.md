@@ -1,0 +1,1 @@
+Weekly assignments in ADIS.
