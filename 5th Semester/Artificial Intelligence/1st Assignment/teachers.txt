@@ -1,0 +1,24 @@
+Name/ID/LessonID/MaxHoursWeekly/MaxHoursDaily
+Sharla Chesley/1/3/18/4
+Rosaline Colene/2/1,12/12/4
+Peter Floella/3/1/12/3
+Bill Tracee/4/12/12/4
+Annabeth Gil/5/2,13/16/4
+Lenny Oscar/6/13,24/20/5
+Augustine Joandra/7/3/12/4
+Lewin Daren/8/14/12/3
+Irvin Tanzi/9/25/12/3
+Rosy Kaydence/10/4,15,26/18/4
+Lillian Zackary/11/5,16/12/4
+Jonie Benson/12/27/6/3
+Madelynn Darin/13/17,28/18/4
+Angela Daffodil/14/6/12/4
+Cecily Caleb/15/17,28/8/2
+Delia Zeke/16/17,28/16/4
+Marcus Bud/17/7,18,29/18/4
+Buddy Trinity/18/8,19,30/18/5
+Lucile Gertrude/19/9,20,31/18/4
+Freddie Elfreda/20/10,21/13/3
+Piety Lou/21/21,32/14/4
+Theodora Yvette/22/11,22/12/3
+Jojo Harlan/23/33/6/2
