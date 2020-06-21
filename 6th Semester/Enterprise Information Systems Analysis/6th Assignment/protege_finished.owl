@@ -1,0 +1,821 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/diogenis/ontologies/2020/4/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/diogenis/ontologies/2020/4/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/diogenis/ontologies/2020/4/untitled-ontology-4"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Individual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inquired"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refugee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sibling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isChildOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParentOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BirthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BirthPlace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DeathDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DeathPlace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MigrationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Profession"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Telephone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Refugee1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Refugee1Child"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Refugee1Sibling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RefugeeSpouse1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#DeathDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#DeathPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Profession"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inquired"/>
+        <Class IRI="#Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inquired"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Address"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inquired"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Email"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inquired"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inquired"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Profession"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inquired"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Telephone"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#hasParent"/>
+            <Class IRI="#Parent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#DeathDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#DeathPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <Class IRI="#Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#hasParent"/>
+            <Class IRI="#Parent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSpouse"/>
+            <Class IRI="#Refugee&apos;s_Spouse"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#DeathDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#DeathPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#MigrationDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Profession"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <Class IRI="#Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#DeathDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#DeathPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+        <Class IRI="#Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSpouse"/>
+            <Class IRI="#Refugee"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthDate"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#BirthPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Profession"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Child"/>
+        <Class IRI="#Inquired"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Child"/>
+        <Class IRI="#Refugee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Child"/>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Inquired"/>
+        <Class IRI="#Parent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Inquired"/>
+        <Class IRI="#Refugee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Inquired"/>
+        <Class IRI="#Sibling"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Inquired"/>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Refugee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Sibling"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Refugee"/>
+        <Class IRI="#Sibling"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Sibling"/>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Refugee"/>
+        <NamedIndividual IRI="#Refugee1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Child"/>
+        <NamedIndividual IRI="#Refugee1Child"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sibling"/>
+        <NamedIndividual IRI="#Refugee1Sibling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+        <NamedIndividual IRI="#RefugeeSpouse1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <NamedIndividual IRI="#Refugee1Child"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasParent"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasParent"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSibling"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <NamedIndividual IRI="#Refugee1Sibling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <NamedIndividual IRI="#RefugeeSpouse1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthPlace"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthPlace"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <Literal>Athens</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathDate"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathPlace"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <Literal>Athens</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#MigrationDate"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1950</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <Literal>Refugee1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Profession"/>
+        <NamedIndividual IRI="#Refugee1"/>
+        <Literal>Tailor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthDate"/>
+        <NamedIndividual IRI="#Refugee1Child"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1945</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthPlace"/>
+        <NamedIndividual IRI="#Refugee1Child"/>
+        <Literal>Athens</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathDate"/>
+        <NamedIndividual IRI="#Refugee1Child"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathPlace"/>
+        <NamedIndividual IRI="#Refugee1Child"/>
+        <Literal>Thessaloniki</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Refugee1Child"/>
+        <Literal>Child1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Profession"/>
+        <NamedIndividual IRI="#Refugee1Child"/>
+        <Literal>childProfession1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthDate"/>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1870</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthPlace"/>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+        <Literal>Athens</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathDate"/>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1950</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathPlace"/>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+        <Literal>Rome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+        <Literal>Parent1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Profession"/>
+        <NamedIndividual IRI="#Refugee1Parent1"/>
+        <Literal>Cook</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthDate"/>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1872</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthPlace"/>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+        <Literal>Kefallonia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathDate"/>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1937</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathPlace"/>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+        <Literal>Rome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+        <Literal>Parent2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Profession"/>
+        <NamedIndividual IRI="#Refugee1Parent2"/>
+        <Literal>Cook</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthDate"/>
+        <NamedIndividual IRI="#Refugee1Sibling"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1901</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthPlace"/>
+        <NamedIndividual IRI="#Refugee1Sibling"/>
+        <Literal>Athens</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathDate"/>
+        <NamedIndividual IRI="#Refugee1Sibling"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathPlace"/>
+        <NamedIndividual IRI="#Refugee1Sibling"/>
+        <Literal>Kalamata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Refugee1Sibling"/>
+        <Literal>Sibling1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthDate"/>
+        <NamedIndividual IRI="#RefugeeSpouse1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1899</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthPlace"/>
+        <NamedIndividual IRI="#RefugeeSpouse1"/>
+        <Literal>Naxos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#RefugeeSpouse1"/>
+        <Literal>Spouse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Profession"/>
+        <NamedIndividual IRI="#RefugeeSpouse1"/>
+        <Literal>Writer</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasChild"/>
+        <ObjectProperty IRI="#isChildOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty IRI="#isParentOf"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSpouse"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasChild"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSibling"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isChildOf"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isParentOf"/>
+        <Class IRI="#Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChild"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasChild"/>
+            <Class IRI="#Child"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasParent"/>
+            <Class IRI="#Parent"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSibling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSibling"/>
+            <Class IRI="#Sibling"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpouse"/>
+            <Class IRI="#Refugee&apos;s_Spouse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isChildOf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChildOf"/>
+            <Class IRI="#Child"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isChildOf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChildOf"/>
+            <Class IRI="#Refugee"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isParentOf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isParentOf"/>
+            <Class IRI="#Refugee"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Address"/>
+        <Class IRI="#Inquired"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BirthDate"/>
+        <Class IRI="#Individual"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BirthPlace"/>
+        <Class IRI="#Individual"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathDate"/>
+        <Class IRI="#Child"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathDate"/>
+        <Class IRI="#Parent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathDate"/>
+        <Class IRI="#Refugee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathDate"/>
+        <Class IRI="#Sibling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathPlace"/>
+        <Class IRI="#Child"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathPlace"/>
+        <Class IRI="#Parent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathPlace"/>
+        <Class IRI="#Refugee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathPlace"/>
+        <Class IRI="#Sibling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Email"/>
+        <Class IRI="#Inquired"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MigrationDate"/>
+        <Class IRI="#Refugee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#Individual"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Profession"/>
+        <Class IRI="#Child"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Profession"/>
+        <Class IRI="#Inquired"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Profession"/>
+        <Class IRI="#Parent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Profession"/>
+        <Class IRI="#Refugee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Profession"/>
+        <Class IRI="#Refugee&apos;s_Spouse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Telephone"/>
+        <Class IRI="#Inquired"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

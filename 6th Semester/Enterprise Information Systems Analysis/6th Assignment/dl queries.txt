@@ -1,0 +1,15 @@
+Name value "Refugee1"
+
+Individual and Name some xsd:string
+
+hasChild exactly 1 and  BirthPlace value "Athens"
+
+BirthDate min 1875
+
+DeathPlace value "Athens"
+
+Profession some xsd:string
+
+DeathDate max 1985
+
+BirthDate exactly 1901
