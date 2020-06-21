@@ -1,0 +1,12 @@
+BEGINTRANSACTION
+
+TELL Individual O in M1_Class
+end O
+
+TELL Attribute TR
+	from : O
+	to : O
+	in M1_Class
+end
+
+ENDTRANSACTION

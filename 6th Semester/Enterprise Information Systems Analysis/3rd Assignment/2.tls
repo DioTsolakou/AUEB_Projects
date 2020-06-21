@@ -1,0 +1,126 @@
+BEGINTRANSACTION
+
+TELL Individual Buyer in S_Class
+end Buyer
+TELL Individual Person in S_Class isA Buyer
+end Person
+TELL Individual Company in S_Class isA Buyer
+end Company
+TELL Individual Baker in S_Class isA Person
+end Baker
+TELL Individual Customer in S_Class isA Person
+end Customer
+TELL Individual Transaction in S_Class
+end Tranasaction
+TELL Individual Date in S_Class
+end Date
+TELL Individual Product in S_Class
+end Product
+TELL Individual Production in S_Class
+end Production
+TELL Individual ProductName in S_Class
+end
+TELL Individual ProductType in S_Class
+end
+TELL Individual Amount in S_Class
+end
+TELL Individual PricePerPart in S_Class
+end
+TELL Individual BuyerName in S_Class
+end
+
+TELL Attribute hasName
+	from : Product
+	to : ProductName
+	in S_Class
+end
+TELL Attribute isOfType
+	from : Product
+	to : ProductType
+	in S_Class
+end
+TELL Attribute hasAmount
+	from : Product
+	to : Amount
+	in S_Class
+end
+TELL Attribute hasPrice
+	from : Tranasaction
+	to : PricePerPart
+	in S_Class
+end
+TELL Attribute isNamed
+	from : Buyer
+	to : BuyerName
+	in S_Class
+end
+TELL Attribute buyer
+	from : Transaction
+	to : Buyer
+	in S_Class
+end
+TELL Attribute seller
+	from : Transaction
+	to : Buyer
+	in S_Class
+end
+TELL Attribute purchaseDate
+	from : Transaction
+	to : Date
+	in S_Class
+end
+TELL Attribute includes
+	from : Transaction
+	to : Product
+	in S_Class
+end
+TELL Attribute produces
+	from : Baker
+	to : Production
+	in S_Class
+end
+TELL Attribute isUsed
+	from : Product
+	to : Production
+	in S_Class
+end
+TELL Attribute produced
+	from : Production
+	to : Product
+	in S_Class
+end
+
+TELL Individual BakerA in Token, Baker
+	with produces : Production1
+end
+TELL Individual Production1 in Token, Production
+	with produced : Product2
+end
+TELL Individual FlourCompanyB in Token, Company
+end
+TELL Individual Product1 in Token, Product
+	with hasName : Flour
+		isOfType : AAA
+		hasAmount : 20
+		isUsed : Production1
+end
+TELL Individual Transaction1 in Token, Tranasaction
+	with buyer : BakerA
+		seller : FlourCompanyB
+		includes : Product1
+		purchaseDate : 21/3/2020
+		hasPrice : 1.2
+end
+TELL Individual Product2 in Token, Product
+	with hasName : Bread
+		isOfType : Loaf
+		hasAmount : 70
+end
+TELL Individual Transaction2 in Token, Transaction
+	with buyer : CustomerA
+		seller : BakerA
+		includes : Product2
+		purchaseDate : 23/3/2020
+		hasPrice : 1.1
+end
+ENDTRANSACTION

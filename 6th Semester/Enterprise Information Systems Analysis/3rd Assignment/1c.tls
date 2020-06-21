@@ -1,0 +1,74 @@
+BEGINTRANSACTION
+
+TELL Individual Object in M1_Class
+end Object
+
+TELL Individual Car in S_Class, Object
+end Car
+TELL Individual Engine in S_Class, Object
+end Engine
+TELL Individual CodeNumber in M1_Class
+end CodeNumber
+TELL Individual Person in S_Class
+end Person
+TELL Individual Value in S_Class
+end Value
+TELL Individual Purchase in S_Class
+end Purchase
+TELL Individual Date in S_Class
+end Date
+TELL Individual SerialNumber in S_Class, CodeNumber
+end SerialNumber
+TELL Individual EngineNumber in S_Class, CodeNumber
+end EngineNumber
+TELL Individual IDNumber in S_Class, CodeNumber
+end IDNumber
+
+TELL Attribute hasNumber
+	from : Object
+	to : CodeNumber
+	in S_Class
+end
+TELL Attribute hasPart
+	from : Car
+	to : Engine
+	in S_Class
+end
+TELL Attribute serialNumber
+	from : Car
+	to : SerialNumber
+	in S_Class, hasNumber
+end
+TELL Attribute engineNumber
+	from : Engine
+	to : EngineNumber
+	in S_Class, hasNumber
+end
+TELL Attribute owns
+	from : Person
+	to : Car
+	in S_Class
+		with attribute
+			purchaseDate : Date
+end
+TELL Attribute soldItem
+	from : Purchase
+	to : Car
+	in S_Class
+end
+TELL Attribute price
+	from : Purchase
+	to : Value
+	in S_Class
+end
+TELL Attribute seller
+	from : Purchase
+	to : Person
+	in S_Class
+end
+TELL Attribute idNumber
+	from : Person
+	to : IDNumber
+	in S_Class, hasNumber
+end
+ENDTRANSACTION
