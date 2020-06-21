@@ -1,0 +1,128 @@
+BEGINTRANSACTION
+
+TELL Individual EntityType in M1_Class
+end EntityType
+TELL Individual ProcessType in M1_Class
+end ProcessType
+
+TELL Individual Client in S_Class, EntityType
+end Client
+TELL Individual Company in S_Class, EntityType
+end Company
+TELL Individual Command in S_Class, EntityType
+end Command
+TELL Individual Transaction in S_Class, ProcessType
+end Transaction
+TELL Individual Share in S_Class, EntityType
+end Share
+TELL Individual Price in S_Class, EntityType
+end Price
+TELL Individual Purchase in S_Class isA Transaction
+end Purchase
+TELL Individual Sale in S_Class isA Transaction
+end Sale
+TELL Individual Commission in S_Class, EntityType
+end Commission
+TELL Individual ClientInformation in S_Class, EntityType
+end ClientInformation
+TELL Individual Portion in S_Class, EntityType
+end Portion
+TELL Individual CashPortion in S_Class isA Portion
+end CashPortion
+TELL Individual PortionOfSecurities in S_Class isA Portion
+end PortionOfSecurities
+TELL Individual Identification in S_Class, ProcessType
+end Identification
+TELL Individual CommandInformation in S_Class, EntityType
+end CommandInformation
+TELL Individual CommandLiquidation in S_Class, ProcessType
+end CommandLiquidation
+TELL Individual GainsTax in S_Class, EntityType
+end GainsTax
+
+TELL Attribute doesSomething
+	from : EntityType
+	to : EntityType
+	in M1_Class
+end
+TELL Attribute makesA
+	from : EntityType
+	to : ProcessType
+	in M1_Class
+end
+TELL Attribute hasA
+	from : ProcessType
+	to : EntityType
+	in M1_Class
+end
+TELL Attribute creates
+	from : Client
+	to : Command
+	in S_Class, doesSomething
+end
+TELL Attribute hasInfo
+	from : Client
+	to : ClientInformation
+	in S_Class, doesSomething
+end
+TELL Attribute executes
+	from : Command
+	to : Transaction
+	in S_Class, makesA
+end
+TELL Attribute hasShare
+	from : Company
+	to : Share
+	in S_Class, doesSomething
+end
+TELL Attribute hasPrice
+	from : Share
+	to : Price
+	in S_Class, doesSomething
+end
+TELL Attribute hasCommission
+	from : Transaction
+	to : Commission
+	in S_Class, hasA
+end
+TELL Attribute includes
+	from : Transaction
+	to : Share
+	in S_Class, hasA
+end
+TELL Attribute isIdentified
+	from : Client
+	to : Identification
+	in S_Class, makesA
+end
+TELL Attribute hasCommandInfo
+	from : Command
+	to : CommandInformation
+	in S_Class, doesSomething
+end
+TELL Attribute hasPortion
+	from : Client
+	to : Portion
+	in S_Class, doesSomething
+end
+TELL Attribute calculatesPortion
+	from : CommandLiquidation
+	to : Portion
+	in S_Class, hasA
+end
+TELL Attribute calculatesGainsTax
+	from : CommandLiquidation
+	to : GainsTax
+	in S_Class, hasA
+end
+TELL Attribute hasGainsTax
+	from : Sale
+	to : GainsTax
+	in S_Class, hasA
+end
+TELL Attribute calculatesCommission
+	from : CommandLiquidation
+	to : Commission
+	in S_Class, hasA
+end
+ENDTRANSACTION
