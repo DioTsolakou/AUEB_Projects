@@ -1,3 +1,3 @@
-The project of this course can be found here : https://gitlab.com/softeng-2019-20/recipes-online
+A Github repository has been created and can be found here : https://github.com/DioTsolakou/Recipes-Online-SE
 
-It will be fully integrated on Github when time allows.
+It was a team project that was done with https://github.com/chrisargy and https://github.com/CharaGergi for this course.
