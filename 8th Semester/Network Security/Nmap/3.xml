@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///D:/Program Files(x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1619100449" profile_name="" xmloutputversion="1.04" scanner="nmap" version="7.91" startstr="Thu Apr 22 17:07:29 2021" args="nmap -p 80 195.251.248.128/25"><scaninfo services="80" protocol="tcp" numservices="1" type="syn"></scaninfo><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-22 17:07 GTB Daylight Time
+Nmap scan report for 195.251.248.140
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Host is up (0.018s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 195.251.248.143
+Host is up (0.019s latency).
+
+PORT   STATE    SERVICE
+80/tcp filtered http
+
+Nmap scan report for 195.251.248.178
+Host is up (0.019s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 195.251.248.247
+Host is up (0.019s latency).
+
+PORT   STATE  SERVICE
+80/tcp closed http
+
+Nmap scan report for 195.251.248.252
+Host is up (0.018s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 128 IP addresses (5 hosts up) scanned in 73.91 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="195.251.248.140"></address><hostnames></hostnames><ports><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="58"></state><service method="table" conf="3" name="http"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="195.251.248.143"></address><hostnames></hostnames><ports><port protocol="tcp" portid="80"><state reason="no-response" state="filtered" reason_ttl="0"></state><service method="table" conf="3" name="http"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="195.251.248.178"></address><hostnames></hostnames><ports><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="58"></state><service method="table" conf="3" name="http"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="195.251.248.247"></address><hostnames></hostnames><ports><port protocol="tcp" portid="80"><state reason="reset" state="closed" reason_ttl="58"></state><service method="table" conf="3" name="http"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="195.251.248.252"></address><hostnames></hostnames><ports><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="57"></state><service method="table" conf="3" name="http"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><runstats><finished timestr="Thu Apr 22 17:08:43 2021" time="1619100523"></finished><hosts down="123" total="128" up="5"></hosts></runstats></nmaprun>
